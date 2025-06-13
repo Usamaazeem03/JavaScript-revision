@@ -1,0 +1,23 @@
+/* ******************************
+/* bloow 1344px (smaller desktop)*/
+/********************************/
+
+@media (max-width: 84em) {
+  /* .animation-flower {
+    position: absolute;
+    width: 27rem;
+    height: 27rem;
+    right: 50;
+    margin: 0;
+    bottom: 0;
+    z-index: -10;
+  } */
+}
+
+/********************************/
+/* bloow  1119px (Tablets)*/
+/********************************/
+
+/* 1008/16px  */
+@media (max-width: 70em) {
+}
