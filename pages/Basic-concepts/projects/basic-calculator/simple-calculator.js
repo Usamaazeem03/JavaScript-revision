@@ -13,6 +13,11 @@ buttons.forEach((button) => {
 document.addEventListener("keydown", (event) => {
   const key = event.key;
   if ("0123456789+-*/.".includes(key)) {
+    const btn = document.querySelector(`.btn[data-key='${key}']`);
+    if (btn) {
+      btn.classList.add("active");
+      setTimeout(() => btn.classList.remove("active"), 150);
+    }
     handleInput(key);
   } else if (key === "Enter") {
     handleInput("=");
@@ -40,3 +45,5 @@ function handleInput(value) {
     display.value = expression;
   }
 }
+
+document.addEventListener("keydown", function (event) {});
