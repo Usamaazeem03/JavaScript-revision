@@ -13,4 +13,9 @@ Such as:
 - if else if.
 - switch ,? (ternary)
 
+5. loops (for, while)
+6. Function (declaration, expression, arrow)
+7. Array and bisic methods(push,pop,map,forEach)
+8. Objects (basic use)
+
 - And Basic Projects

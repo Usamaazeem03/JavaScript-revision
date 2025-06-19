@@ -179,3 +179,99 @@ const grade =
     ? `${score}% grade C `
     : "Fail";
 console.log(grade);
+// ---------------------------------- //
+// loops (for, while)
+// print name with loop
+for (let i = 1; i <= 10; i++) {
+  // console.log(`${i} Usama`);
+}
+// while
+let i = 1;
+while (i <= 10) {
+  // console.log(`${i} Usama`);
+  i++;
+}
+
+let dice = Math.trunc(Math.random() * 10) + 1;
+console.log(dice);
+
+// ---------------------------------- //
+// Function (declaration, expression, arrow)
+//declaration
+function sayHello() {
+  console.log("Hello Developer");
+}
+sayHello();
+
+//expression
+const add = function (a, b) {
+  return a + b;
+};
+console.log(add(5, 5));
+
+//arrow
+const arrowAdd = (a, b) => a + b;
+console.log(arrowAdd(3, 2));
+
+// ---------------------------------- //
+// Array and bisic methods(push,pop,map,forEach)
+const arr = [1, 2, 3, 4];
+console.log(arr.push(100)); // push
+console.log(arr.pop(arr.at(-1))); // pop and at
+
+const fruits = ["apple 🍎", "banana 🍌", "cherry 🍒"]; //forEach
+fruits.forEach((fruits, index) => {
+  console.log(`${index + 1} ${fruits}`);
+});
+
+const userData = [
+  { name: "usama", age: 23 },
+  { name: "zara", age: 13 },
+  { name: "jonis", age: 33 },
+]; // map
+
+const names = userData.map((user) => user.name);
+console.log(names);
+
+// ---------------------------------- //
+// Objects (basic use)
+// it's Objects
+const person = {
+  name: "Usama",
+  age: "23",
+  isDeveloper: true,
+};
+//basic use
+// Accessing Object properties
+console.log(person.name); //Usama
+console.log(person["age"]); //23
+// Updating Object values
+person.name = "zara";
+person.age = 18;
+console.log(person); //{name: 'zara', age: 18, isDeveloper: true}
+// Adding new property
+person.uiuxDesigner = "true";
+console.log(person);
+//deleting a property
+delete person.isDeveloper;
+console.log(person);
+
+// object with function
+const user1 = {
+  name: "Alix",
+  greet: function () {
+    console.log("Hello " + this.name);
+  },
+};
+user1.greet(); //Hello Alix
+//loop through object
+for (let key in person) {
+  console.log(key + ": " + person[key]);
+}
+// Array of objects
+const users = [
+  { name: "Usama", age: 23 },
+  { name: "sara", age: 20 },
+  { name: "Ali", age: 33 },
+];
+console.log(users[1].name); //sara
