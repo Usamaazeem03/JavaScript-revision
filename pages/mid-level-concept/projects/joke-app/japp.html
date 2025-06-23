@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Joke App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Script -->
+    <script type="module" src="jScript.js"></script>
+  </head>
+  <body class="bg-pink-50 min-h-screen flex items-center justify-center">
+    <div
+      class="bg-white rounded-xl shadow-lg p-8 max-w-md w-full text-center border-2 border-pink-200"
+    >
+      <h1 class="text-3xl font-bold text-pink-600 mb-4">
+        😂 Joke it not Jokee
+      </h1>
+      <div id="joke" class="text-lg text-pink-800 mb-6 min-h-[60px]">
+        Click the button to get a joke!
+      </div>
+      <button
+        id="jokeBtn"
+        class="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-2 px-6 rounded-full transition duration-200 shadow"
+      >
+        New Joke
+      </button>
+    </div>
+  </body>
+</html>

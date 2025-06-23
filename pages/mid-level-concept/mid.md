@@ -16,13 +16,4 @@
 | 12  | Toggle Class & Color        | Toggle class and background color               | ✅ Done | `.toggle-btn`        |
 | 13  | Keyboard Event (Enter)      | Add new element on Enter key press              | ✅ Done |                      |
 
----
-
-**How to use:**
-
-- Each concept is implemented in `mid.js` and can be tested in the browser.
-- Buttons and containers must exist in your HTML with the correct classes/IDs.
-
-**Legend:**
-
-- ✅ Done: Implemented
+| 1 | random joke app | ✅ Done | Project 1 |
