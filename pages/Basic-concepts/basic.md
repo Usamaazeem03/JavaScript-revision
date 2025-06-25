@@ -17,3 +17,4 @@
 | 13  | Object Methods      | Property access, update, delete, loop      | ✅ Done |           |
 | 14  | Calculator Project  | Basic calculator functionality             | ✅ Done | Project 1 |
 | 15  | Quiz App Project    | Interactive quiz with questions & options  | ✅ Done | Project 2 |
+| 16  | Todo List Project   | Simple todo list with add/remove features  | ✅ Done | Project 3 |
