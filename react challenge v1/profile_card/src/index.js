@@ -44,6 +44,14 @@ const data = {
     margin: 0,
   },
 };
+// v2
+const skills = [
+  { skill: "JavaScript", level: "advenced", coler: "#f7df1e" },
+  { skill: "React ", level: "intermediate", coler: "#61dafb" },
+  { skill: "CSS ", level: "advenced", coler: "#2965f1" },
+  { skill: "Node.js ", level: "beginner", coler: "#68a063" },
+];
+
 //////////////////////////////////////////////
 function App() {
   return (
@@ -87,18 +95,36 @@ function Main() {
 }
 
 function Skills() {
+  // v2
   return (
     <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
-      <SkillsData title={<p style={data.javaScript}>javaScript 💛</p>} />
+      {skills.map((skill) => (
+        <SkillsData
+          skillName={skill.skill}
+          level={skill.level}
+          coler={skill.coler}
+          key={skill.skill}
+        />
+      ))}
+      {/* <SkillsData title={<p style={data.javaScript}>javaScript 💛</p>} />
       <SkillsData title={<p style={data.React}>React ⚛️</p>} />
       <SkillsData title={<p style={data.CSS}>CSS 🎨</p>} />
-      <SkillsData title={<p style={data.NodeJS}>Node.js 🌳</p>} />
+      <SkillsData title={<p style={data.NodeJS}>Node.js 🌳</p>} /> */}
     </div>
   );
 }
-
-function SkillsData(props) {
-  return <div>{props.title}</div>;
+// v-2
+function SkillsData({ skillName, level, coler }) {
+  return (
+    <div style={{ backgroundColor: coler }}>
+      <span>{skillName}</span>
+      <span>
+        {level === "advenced" && "👨‍🎓"}
+        {level === "intermediate" && "🥷"}
+        {level === "beginner" && "👍"}
+      </span>
+    </div>
+  );
 }
 const root = ReactDom.createRoot(document.getElementById("root"));
 root.render(
